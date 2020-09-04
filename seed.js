@@ -10,9 +10,7 @@ const countries = require('./countries');
      } else {
          day = index
      }
-     const url = 
-    `https://raw.githubusercontent.com/CSSEGISandData/Covid-19/master/csse_covid_19_daily_reports/05-${day}-2020.csv`; 
-// `https://raw.githubusercontent.com/dougymenns/covid-data/master/covid%2019%20data.csv`;
-    //  console.log(url);
+     const url = `https://raw.githubusercontent.com/dougymenns/covid-data/master/covid%2019%20data.csv`;
+
     reader(url, countries, Case);
  }

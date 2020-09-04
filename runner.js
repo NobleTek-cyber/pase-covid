@@ -8,9 +8,8 @@ const yesterday = new Date(new Date().setDate(new Date().getDate() - 1));
 const date = (moment(yesterday).format('MM-DD-YYYY'));
 
 
-const url = 
-    `https://raw.githubusercontent.com/CSSEGISandData/Covid-19/master/csse_covid_19_daily_reports/${date}.csv`; 
-// `https://raw.githubusercontent.com/dougymenns/covid-data/master/covid%2019%20data/${date}.csv`;
+const url = `https://raw.githubusercontent.com/dougymenns/covid-data/master/covid%2019%20data/${date}.csv`;
+    
 
 const getUpdtate = async function () {
     reader(url, countries, Case);

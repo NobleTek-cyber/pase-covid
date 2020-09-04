@@ -6,9 +6,8 @@ const Case = require('./database');
 require('./runner');
 const app = express();
 
-const url = 
-    `https://raw.githubusercontent.com/CSSEGISandData/Covid-19/master/csse_covid_19_daily_reports/05-05-2020.csv`; 
-// `https://raw.githubusercontent.com/dougymenns/covid-data/master/covid%2019%20data.csv`;
+const url = `https://raw.githubusercontent.com/dougymenns/covid-data/master/covid%2019%20data.csv`;
+     
 
 // mongoose.connect('mongodb://localhost:27017', {
 //     useUnifiedTopology: true,

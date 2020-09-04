@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const uri = 'mongodb+srv://Nobletek-cyber:nobletek@cluster0.jkmpx.gcp.mongodb.net/PaseCovid?retryWrites=true&w=majority'
+const uri = 'mongodb+srv://<username>:<password>@cluster0.jkmpx.gcp.mongodb.net/PaseCovid?retryWrites=true&w=majority'
 
 mongoose.connect(uri, {
     useUnifiedTopology: true,

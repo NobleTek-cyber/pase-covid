@@ -6,7 +6,7 @@ function createStreamReader(url, countries, model) {
     csv.parseStream(request(url))
     .on('data', (row) => {
         if (countries.includes(row[3])) {
-            // console.log(row);
+        
             cases.push({
                 Country: row[3],
                 Confirmed: row[7],
@@ -19,7 +19,6 @@ function createStreamReader(url, countries, model) {
     })
     .on('end', () => {
         console.log('CSV file successfully processed');
-        // return res.json(cases).status(200);
         model.insertMany(cases, () => {});
     });
 };
